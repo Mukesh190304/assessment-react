@@ -1,0 +1,221 @@
+/* 
+     <form onSubmit={handlesubmit}>
+            <div className="form-group">
+                <label>Insurance ID:</label>
+                </div>
+                <div className="form-group">
+                    <input type="text" value={insurance.id} onChange={(e)=>setInsurance({...insurance,id:e.target.value})}/>
+                </div>
+                <div className="form-group">
+                    <label>Name:</label>
+                </div>
+                <div className="form-group">
+                    <input type="text" value={insurance.name} onChange={(e)=>setInsurance({...insurance,name:e.target.value})}/>
+                </div>
+                <div className="form-group">
+                    <label>Type:</label>
+                </div>
+                <div className="form-group">
+                    <input type="text" value={insurance.type} onChange={(e)=>setInsurance({...insurance,type:e.target.value})}/>
+                </div>
+                <div className="form-group">
+                    <label>Amount:</label>
+                </div>
+                <div className="form-group">
+                    <input type="text" value={insurance.amount} onChange={(e)=>setInsurance({...insurance,amount:e.target.value})}/>
+                </div>
+                <div className="form-group">
+                    <label>Expiry Date:</label>
+                </div>
+                <div className="form-group">
+                    <input type="text" value={insurance.expirydate} onChange={(e)=>setInsurance({...insurance,expirydate:e.target.value})}/>
+                </div>  
+                <div className="form-group">
+                    <button type="submit">{isEditing?"Update":"Add"}</button>
+                </div>
+        </form>
+
+
+        make it more attractive,beatiful colourful with 3d effects for this form and make each div more attractive
+
+
+
+*/
+
+
+
+
+/*     <div>
+            <h2>Insurance List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Insurance ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Expiry Date</th>
+                      
+                        </tr>
+                        </thead>
+                        <tbody>
+                            {insurancelist.map((insurancelist)=>(
+                                <tr key={insurancelist.id}>
+                                    <td>{insurancelist.id}</td>
+                                    <td>{insurancelist.name}</td>
+                                    <td>{insurancelist.type}</td>
+                                    <td>{insurancelist.amount}</td>
+                                    <td>{insurancelist.expirydate}</td>
+                                    <td>
+                                        <button onClick={()=>handleDelete(insurancelist.id)}>Delete</button>
+                                        <button onClick={()=>handleEdit(insurancelist)}>Edit</button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                        
+                        
+                       
+                       
+
+
+
+                    
+               
+            </table>
+        </div>
+
+
+
+        make this table more attractive colourful with separate color for button edit green delete red other css
+        */
+
+        table{
+            border-collapse: collapse;
+            width: 60%;
+            position: relative;
+            left: 40vh;
+            height: 100%;
+            background-color: #f2f2f2;
+
+        }
+        th,td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            color: #333;
+        }
+        th{
+            background-color: #527cee;
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        tr:hover{
+            background-color: #ddd;
+        }
+        #edit,#delete{
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 2px 10px;
+        }
+        #edit{
+            background-color: #4CAF50;
+        }
+        #delete{
+            background-color: #f44336;
+        }
+        #submit{
+            background-color: #4CAF50;
+            color: white;
+            width: 100px;
+            height: 30px;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 2px 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+form{
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 400px;
+   
+
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"]{
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+button[type="submit"]{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100vh;
+    height: 100vh;
+}
+.container{
+    background-color: rgb(239, 206, 206);
+    width: 70vh;
+    height: 70vh;
+    position: relative;
+    left: 60vh;
+    top:5vh;
+
+    
+}
+.insurance-container{
+    background-image: url(https://previews.123rf.com/images/melpomen/melpomen2002/melpomen200200362/139571329-insurance-concept-with-businessman-on-a-city-background.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    left:10vh;
+}
+
+
